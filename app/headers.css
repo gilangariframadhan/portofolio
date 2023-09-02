@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+.header {
+  padding: 1rem 0; /* padding atas dan bawah untuk memberi ruang vertikal */
+  background-color: rgba(255, 255, 255, 0.1);
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+
+.content {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 12px;
+}
+.logo {
+  width: 100px; /* Atur lebar gambar sesuai kebutuhan */
+  height: 100px; /* Atur tinggi gambar sesuai kebutuhan */
+  border-radius: 50%; /* Ini membuat gambar berbentuk bulat */
+  object-fit: cover; /* Ini memastikan gambar tidak terdistorsi */
+  overflow: hidden;
+}
+.hamburger {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  display: none; /* Sembunyikan secara default */
+}
+
+.navbar {
+  display: flex;
+  gap: 1rem;
+  transition: max-height 0.3s ease-in-out;
+  max-height: 300px;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+/* Ketika .navbar memiliki kelas .open, ubah max-height menjadi 300px (atau lebih sesuai kebutuhan) */
+.navbar.open {
+  max-height: 300px;
+}
+.navItem {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+  font-size: 24px;
+}
+
+.navItem:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .content {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 8px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .navItem {
+    font-size: 20px;
+  }
+}

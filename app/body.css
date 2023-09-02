@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap");
+
+body {
+  font-family: "Black Ops One", cursive;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #000; /* Warna latar belakang hitam */
+}
+
+.body {
+  margin-top: 28vh;
+  text-align: center;
+  font-size: clamp(32px, 6vw, 64px);
+  margin-bottom: 42vh;
+}
+
+.animated-name {
+  overflow: hidden;
+  border-right: 2px solid white;
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: typing 4.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+.typing {
+  border-right: 0.05em solid black;
+}
+
+.finished {
+  animation: none;
+  border-right: none; /* Menghilangkan garis kedip */
+}
+.space {
+  display: inline-block;
+  width: 0.3em; /* Menentukan lebar spasi, Anda dapat menyesuaikannya */
+}
+.star {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.5;
+  animation: twinkle 1.5s infinite alternate;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  0%,
+  100% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white; /* Ubah warna ini menjadi putih */
+  }
+}
+@keyframes twinkle {
+  from {
+    transform: scale(0.5);
+    opacity: 0.5;
+  }
+  to {
+    transform: scale(1.5);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .star {
+    width: 2px;
+    height: 2px;
+  }
+}
