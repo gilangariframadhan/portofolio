@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import '../app/headers.css';
+import '@/public/profile.jpg'
 
 const Header = () => {
     const toggleMenu = () => {
