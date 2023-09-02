@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import '../app/headers.css';
-import '@/public/profile.jpg'
+import Image from 'next/image';
 
 const Header = () => {
     const toggleMenu = () => {
@@ -18,7 +18,7 @@ const Header = () => {
     return (
         <header className="header">
             <div className='content'>
-                <img src="/profile.jpg" alt="Profile" className="logo" />
+                <Image src="/profile.jpg" alt="Profile" className="logo" width={100} height={100} />
                 <button className="hamburger" onClick={toggleMenu}>
                     &#9776;  {/* Unicode untuk icon hamburger */}
                 </button>
