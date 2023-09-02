@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ["https://portofolio-taupe.vercel.app"], // Ganti 'example.com' dengan domain dari mana Anda ingin memuat gambar.
+    domains: ["https://portofolio-taupe.vercel.app/"], // Ganti 'example.com' dengan domain dari mana Anda ingin memuat gambar.
   },
 };
 
