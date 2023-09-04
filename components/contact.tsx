@@ -1,4 +1,5 @@
-import React from "react"
+import Image from "next/image"
+import React, { ProfilerProps } from "react"
 
 type ContactProps = {
     id?: string
@@ -18,18 +19,18 @@ const Contact: React.FC<ContactProps> = ({ id }) => {
                         <img src="/assetsSosmed/instagram.png" width="40" height="40" style={{ marginRight: '10px', marginTop: '10px', marginBottom: '10px' }} />
                         <span>@gilangariframadhan</span>
                     </a>
-                    <a href="https://t.me/gilangariframadhan" style={{ display: 'flex', alignItems: 'center' }}>
-                        <img src="/assetsSosmed/telegram.png" width="40" height="40" style={{ marginRight: '10px', marginTop: '10px', marginBottom: '10px' }} />
-                        <span>@gilangariframadhan</span>
-                    </a>
                     <a href="https://wa.me/089694337344" style={{ display: 'flex', alignItems: 'center' }}>
                         <img src="/assetsSosmed/whatsapp.png" width="40" height="40" style={{ marginRight: '10px', marginTop: '10px', marginBottom: '10px' }} />
                         <span>089694337344</span>
                     </a>
+                    <a href="https://t.me/gilangariframadhan" style={{ display: 'flex', alignItems: 'center' }}>
+                        <img src="/assetsSosmed/telegram.png" width="40" height="40" style={{ marginRight: '10px', marginTop: '10px', marginBottom: '10px' }} />
+                        <span>@gilangariframadhan</span>
+                    </a>
                 </div>
             </div>
             <div className="box-content flex-grow h-1/2 md:h-3/4 bg-black flex items-center justify-center">
-                <img src="/profile2.JPG" alt="Profile" className="rounded-full" width="500" height="500" />
+                <Image src="/profile2.jpg" alt="Profile" className="rounded-full" width={500} height={500} />
             </div>
         </div>
     )
