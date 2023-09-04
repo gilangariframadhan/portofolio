@@ -30,7 +30,7 @@ const Contact: React.FC<ContactProps> = ({ id }) => {
                 </div>
             </div>
             <div className="box-content flex-grow h-1/2 md:h-3/4 bg-black flex items-center justify-center">
-                <img src="/profile2.JPG" alt="Profile" className="rounded-full" width={500} height={500} />
+                <img src="/profile2.JPG" alt="Profile" className="rounded-full" width="500" height="500" />
             </div>
         </div>
     )
