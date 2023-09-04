@@ -1,9 +1,16 @@
 import '@/app/profile.css'
 import Image from 'next/image';
+import React from 'react';
 
-const Profile = () => {
+// 1. Tambahkan tipe properti untuk `Profile`
+type ProfileProps = {
+    id?: string;
+};
+
+const Profile: React.FC<ProfileProps> = ({ id }) => {
     return (
-        <div className="profile flex flex-col md:flex-row gap-4 p-4 h-screen items-center justify-center">
+        // 2. Gunakan properti `id` di elemen root dari komponen `Profile`
+        <div className="profile flex flex-col md:flex-row gap-4 p-4 h-screen items-center justify-center" id={id}>
             <div className="box-content flex-grow h-1/2 md:h-3/4 bg-black flex items-center justify-center">
                 <Image src="/profile2.JPG" alt="Profile" className="rounded-full" width={500} height={500} />
             </div>

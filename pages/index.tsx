@@ -2,6 +2,7 @@ import Body from '@/components/body';
 import Header from '../components/header';
 import React, { useState, useEffect } from 'react';
 import Profile from '@/components/profile';
+import Contact from '@/components/contact'
 
 
 const Home = () => {
@@ -39,7 +40,8 @@ const Home = () => {
       <Header />
       <Body />
       {stars}
-      <Profile />
+      <Profile id='profile' />
+      <Contact id='contact' />
     </div>
   );
 }

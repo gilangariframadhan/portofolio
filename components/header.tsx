@@ -25,8 +25,8 @@ const Header = () => {
                 <nav className="navbar">
                     <Link href="/" className="navItem">Home</Link>
                     <Link href="/about" className="navItem">About</Link>
-                    <Link href="/contact" className="navItem">Contact</Link>
-                    <Link href="/profile" className="navItem">Profile</Link>
+                    <Link href="#contact" className="navItem">Contact</Link>
+                    <Link href="#profile" className="navItem">Profile</Link>
                 </nav>
             </div>
         </header>

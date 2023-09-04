@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+.namaProfile {
+  font-family: "Poppins", sans-serif;
+  color: black;
+}
+
+a img,
+a span {
+  display: inline-block;
+}
