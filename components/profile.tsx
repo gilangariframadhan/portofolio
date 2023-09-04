@@ -12,7 +12,7 @@ const Profile: React.FC<ProfileProps> = ({ id }) => {
         // 2. Gunakan properti `id` di elemen root dari komponen `Profile`
         <div className="profile flex flex-col md:flex-row gap-4 p-4 h-screen items-center justify-center" id={id}>
             <div className="box-content flex-grow h-1/2 md:h-3/4 bg-black flex items-center justify-center">
-                <Image src="/profile2.jpg" alt="Profile" className="rounded-full" width={500} height={500} />
+                <Image src="/profile2.jpg" alt="Profile2" className="rounded-full" width={500} height={500} />
             </div>
             <div className="box-content flex-grow h-1/2 md:h-3/4 bg-white p-4 flex items-center justify-center">
                 <div className='namaProfile text-4xl'>
