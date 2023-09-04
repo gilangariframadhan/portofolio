@@ -18,7 +18,7 @@ const Header = () => {
     return (
         <header className="header">
             <div className='content'>
-                <Image src="/profile.jpg" alt="Profile" className="logo" width={100} height={100} />
+                <Image src="/profile.JPG" alt="Profile" className="logo" width={100} height={100} />
                 <button className="hamburger" onClick={toggleMenu}>
                     &#9776;  {/* Unicode untuk icon hamburger */}
                 </button>
