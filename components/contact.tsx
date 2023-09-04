@@ -1,5 +1,4 @@
-import Image from "next/image"
-import React, { ProfilerProps } from "react"
+import React from "react"
 
 type ContactProps = {
     id?: string
