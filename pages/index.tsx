@@ -7,14 +7,16 @@ import Contact from '@/components/contact'
 
 const Home = () => {
   const [stars, setStars] = useState<JSX.Element[]>([]);
+  const starWidth = 25;
+  const starHeight = 25;
 
   useEffect(() => {
     const generateStars = (num: number) => {
       let starsArray = [];
       for (let i = 0; i < num; i++) {
         const style = {
-          top: `${Math.random() * window.innerHeight}px`,
-          left: `${Math.random() * window.innerWidth}px`
+          top: `${Math.random() * (document.documentElement.clientHeight - starHeight)}px`,
+          left: `${Math.random() * (document.documentElement.clientWidth - starWidth)}px`
         };
         starsArray.push(<div className="star" style={style} key={i} />);
       }
